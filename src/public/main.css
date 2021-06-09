@@ -1,0 +1,8 @@
+.cuerpo
+{
+  font-family: 'Montserrat', sans-serif;
+  flex: auto;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}

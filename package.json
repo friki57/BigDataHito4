@@ -1,0 +1,25 @@
+{
+  "name": "bigdatahito4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon src/BigData.js",
+    "start": "node src/BigData.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Friki57/BigDataHito4.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Friki57/BigDataHito4/issues"
+  },
+  "homepage": "https://github.com/Friki57/BigDataHito4#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "morgan": "^1.10.0"
+  }
+}

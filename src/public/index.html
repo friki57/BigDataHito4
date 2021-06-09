@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Big Data Hito 4</title>
+
+    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  </head>
+  <body>
+  <div class="" id="root"></div>
+
+  <!-- titulo -->
+
+  <div class="bg-white w-100 flex flex-col items-center justify-center text-center">
+    <div class="bg-blue-600 text-white p-5 flex flex-col justify-center items-center">
+      <h1 class="text-3xl w-3/4 p-8 font-bold">Aplicación de Clustering para la segmentación de profesores según su capacidad en Tecnologías de la Información</h1>
+      <div class="text-left mr-9 pr-5 self-end">
+        <br><span  class="font-bold">Realizado por:</span>
+        <br>• Brian David Pillco Flores
+        <br>• Martin Sinka Castillo
+        <br>• Erick Rodrigo Aranibar Arias
+      </div>
+    </div>
+
+    <!-- cuerpo -->
+
+    <div class="bg-white w-3/4 text-justify mt-9">
+      <h3 class="font-bold text-xl mt-5">1. Introducción.</h3>
+      <div class="p-5">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam consectetur nulla auctor orci vulputate, eget consectetur sapien cursus. Vivamus vel feugiat turpis. Suspendisse venenatis risus metus, vitae bibendum ligula condimentum at. Aenean tristique massa odio, id vulputate justo commodo a. Nam quam orci, tempus in efficitur at, auctor ut nunc. Pellentesque id tellus vel nisl pellentesque maximus ut vitae urna. Nulla et molestie urna. Aenean varius diam et facilisis rhoncus. Aliquam erat volutpat. Pellentesque dolor lectus, vulputate id pharetra ut, scelerisque nec odio. Duis ultricies dignissim rhoncus. Pellentesque vel sem commodo, aliquam justo ut, posuere tellus. Cras venenatis consectetur consectetur. Integer quis sagittis leo. Etiam efficitur eget lacus at bibendum. Maecenas egestas iaculis est et varius.
+
+        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nunc vehicula vestibulum lectus rutrum condimentum. Sed sodales lectus quis sodales volutpat. Donec et augue ut erat rutrum venenatis. Vestibulum varius, augue nec dapibus mattis, justo est aliquam velit, nec molestie neque risus sit amet nunc. Sed volutpat pulvinar arcu, non scelerisque purus sodales tincidunt. Nullam non lacinia turpis, in lobortis diam. Donec sollicitudin, orci in ullamcorper convallis, nisi neque volutpat erat, eu sollicitudin magna arcu vel risus. Vivamus volutpat maximus sem.
+
+        Aliquam gravida ipsum at malesuada dapibus. Nulla facilisi. Phasellus et elit interdum dolor condimentum gravida id sed dolor. Duis enim ex, sagittis quis felis quis, aliquam faucibus quam. In lacinia mattis lorem, sit amet mattis libero lacinia nec. Vestibulum eget tempus turpis. Cras dolor ante, iaculis vitae fermentum ut, dictum in justo. In porttitor bibendum dolor id consequat. Sed nec scelerisque arcu, at efficitur felis. Praesent pretium leo eget est lobortis aliquam.
+
+      </div>
+
+      <h3 class="font-bold text-xl mt-5">2. Objetivos.</h3>
+      <div class="p-5">
+        <span class="font-semibold">Objetivo General: <br></span>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam consectetur nulla auctor orci vulputate, eget consectetur sapien cursus. Vivamus vel feugiat turpis. Suspendisse venenatis risus metus, vitae bibendum ligula condimentum at. Aenean tristique massa odio, id vulputate justo commodo a. Nam quam orci, tempus in efficitur at, auctor ut nunc. Pellentesque id tellus vel nisl pellentesque maximus ut vitae urna. Nulla et molestie urna. Aenean varius diam et facilisis rhoncus. Aliquam erat volutpat. Pellentesque dolor lectus, vulputate id pharetra ut, scelerisque nec odio. Duis ultricies dignissim rhoncus. Pellentesque vel sem commodo, aliquam justo ut, posuere tellus. Cras venenatis consectetur consectetur. Integer quis sagittis leo. Etiam efficitur eget lacus at bibendum. Maecenas egestas iaculis est et varius.
+<br>
+<br>
+        <span class="font-semibold">Objetivos específicos: <br></span>
+        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nunc vehicula vestibulum lectus rutrum condimentum. Sed sodales lectus quis sodales volutpat. Donec et augue ut erat rutrum venenatis. Vestibulum varius, augue nec dapibus mattis, justo est aliquam velit, nec molestie neque risus sit amet nunc. Sed volutpat pulvinar arcu, non scelerisque purus sodales tincidunt. Nullam non lacinia turpis, in lobortis diam. Donec sollicitudin, orci in ullamcorper convallis, nisi neque volutpat erat, eu sollicitudin magna arcu vel risus. Vivamus volutpat maximus sem.
+
+        Aliquam gravida ipsum at malesuada dapibus. Nulla facilisi. Phasellus et elit interdum dolor condimentum gravida id sed dolor. Duis enim ex, sagittis quis felis quis, aliquam faucibus quam. In lacinia mattis lorem, sit amet mattis libero lacinia nec. Vestibulum eget tempus turpis. Cras dolor ante, iaculis vitae fermentum ut, dictum in justo. In porttitor bibendum dolor id consequat. Sed nec scelerisque arcu, at efficitur felis. Praesent pretium leo eget est lobortis aliquam.
+
+      </div>
+
+      <h3 class="font-bold text-xl mt-5">3. Problema.</h3>
+      <div class="p-5">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam consectetur nulla auctor orci vulputate, eget consectetur sapien cursus. Vivamus vel feugiat turpis. Suspendisse venenatis risus metus, vitae bibendum ligula condimentum at. Aenean tristique massa odio, id vulputate justo commodo a. Nam quam orci, tempus in efficitur at, auctor ut nunc. Pellentesque id tellus vel nisl pellentesque maximus ut vitae urna. Nulla et molestie urna. Aenean varius diam et facilisis rhoncus. Aliquam erat volutpat. Pellentesque dolor lectus, vulputate id pharetra ut, scelerisque nec odio. Duis ultricies dignissim rhoncus. Pellentesque vel sem commodo, aliquam justo ut, posuere tellus. Cras venenatis consectetur consectetur. Integer quis sagittis leo. Etiam efficitur eget lacus at bibendum. Maecenas egestas iaculis est et varius.
+<br>
+<br>
+        <span class="font-semibold">a. Formulación del problema. <br></span>
+        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nunc vehicula vestibulum lectus rutrum condimentum. Sed sodales lectus quis sodales volutpat. Donec et augue ut erat rutrum venenatis. Vestibulum varius, augue nec dapibus mattis, justo est aliquam velit, nec molestie neque risus sit amet nunc. Sed volutpat pulvinar arcu, non scelerisque purus sodales tincidunt. Nullam non lacinia turpis, in lobortis diam. Donec sollicitudin, orci in ullamcorper convallis, nisi neque volutpat erat, eu sollicitudin magna arcu vel risus. Vivamus volutpat maximus sem.
+
+        Aliquam gravida ipsum at malesuada dapibus. Nulla facilisi. Phasellus et elit interdum dolor condimentum gravida id sed dolor. Duis enim ex, sagittis quis felis quis, aliquam faucibus quam. In lacinia mattis lorem, sit amet mattis libero lacinia nec. Vestibulum eget tempus turpis. Cras dolor ante, iaculis vitae fermentum ut, dictum in justo. In porttitor bibendum dolor id consequat. Sed nec scelerisque arcu, at efficitur felis. Praesent pretium leo eget est lobortis aliquam.
+
+      </div>
+
+
+
+
+      <h3 class="font-bold text-xl mt-5">4. Marco Práctico.</h3>
+      <div class="p-5">
+        <span class="font-semibold">a. Desarrollo del problema con metodología CRISP. <br></span>
+
+        <div class="flex justify-center w-100 m-6">
+          <img src="https://picsum.photos/600/300" alt=""> <br>
+        </div>
+
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam consectetur nulla auctor orci vulputate, eget consectetur sapien cursus. Vivamus vel feugiat turpis. Suspendisse venenatis risus metus, vitae bibendum ligula condimentum at. Aenean tristique massa odio, id vulputate justo commodo a. Nam quam orci, tempus in efficitur at, auctor ut nunc. Pellentesque id tellus vel nisl pellentesque maximus ut vitae urna. Nulla et molestie urna. Aenean varius diam et facilisis rhoncus. Aliquam erat volutpat. Pellentesque dolor lectus, vulputate id pharetra ut, scelerisque nec odio. Duis ultricies dignissim rhoncus. Pellentesque vel sem commodo, aliquam justo ut, posuere tellus. Cras venenatis consectetur consectetur. Integer quis sagittis leo. Etiam efficitur eget lacus at bibendum. Maecenas egestas iaculis est et varius.
+<br>
+<br>
+        <span class="font-semibold">b. Análisis del problema. <br></span>
+        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nunc vehicula vestibulum lectus rutrum condimentum. Sed sodales lectus quis sodales volutpat. Donec et augue ut erat rutrum venenatis. Vestibulum varius, augue nec dapibus mattis, justo est aliquam velit, nec molestie neque risus sit amet nunc. Sed volutpat pulvinar arcu, non scelerisque purus sodales tincidunt. Nullam non lacinia turpis, in lobortis diam. Donec sollicitudin, orci in ullamcorper convallis, nisi neque volutpat erat, eu sollicitudin magna arcu vel risus. Vivamus volutpat maximus sem.
+
+        <br>
+        <br>
+        <span class="font-semibold">c. Análisis de los datos. <br></span>
+
+        <div class="flex justify-between items-center">
+          <div class="w-1/2 m-3">
+            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nunc vehicula vestibulum lectus rutrum condimentum. Sed sodales lectus quis sodales volutpat. Donec et augue ut erat rutrum venenatis. Vestibulum varius, augue nec dapibus mattis, justo est aliquam velit, nec molestie neque risus sit amet nunc. Sed volutpat pulvinar arcu, non scelerisque purus sodales tincidunt. Nullam non lacinia turpis, in lobortis diam. Donec sollicitudin, orci in ullamcorper convallis, nisi neque volutpat erat, eu sollicitudin magna arcu vel risus.
+          </div>
+
+          <img src="https://picsum.photos/400/200" alt="" class="h-auto w-1/2 m-3"> <br>
+        </div>
+
+
+        <div class="flex justify-between items-center">
+          <img src="https://picsum.photos/400/200" alt="" class="h-auto w-1/2 m-3"> <br>
+          <div class="w-1/2 m-3">
+        Vivamus volutpat maximus sem. Duis enim ex, sagittis quis felis quis, aliquam faucibus quam. In lacinia mattis lorem, sit amet mattis libero lacinia nec. Vestibulum eget tempus turpis. Cras dolor ante, iaculis vitae fermentum ut, dictum in justo. In porttitor bibendum dolor id consequat. Sed nec scelerisque arcu, at efficitur felis. Praesent pretium leo eget est lobortis aliquam.
+          </div>
+
+        </div>
+
+
+
+
+        Aliquam gravida ipsum at malesuada dapibus. Nulla facilisi. Phasellus et elit interdum dolor condimentum gravida id sed dolor.
+
+        <br>
+        <br>
+        <span class="font-semibold">d. Preparación de los datos. <br></span>
+        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nunc vehicula vestibulum lectus rutrum condimentum. Sed sodales lectus quis sodales volutpat. Donec et augue ut erat rutrum venenatis. Vestibulum varius, augue nec dapibus mattis, justo est aliquam velit, nec molestie neque risus sit amet nunc. Sed volutpat pulvinar arcu, non scelerisque purus sodales tincidunt. Nullam non lacinia turpis, in lobortis diam. Donec sollicitudin, orci in ullamcorper convallis, nisi neque volutpat erat, eu sollicitudin magna arcu vel risus. Vivamus volutpat maximus sem.
+
+        Aliquam gravida ipsum at malesuada dapibus. Nulla facilisi. Phasellus et elit interdum dolor condimentum gravida id sed dolor. Duis enim ex, sagittis quis felis quis, aliquam faucibus quam. In lacinia mattis lorem, sit amet mattis libero lacinia nec. Vestibulum eget tempus turpis. Cras dolor ante, iaculis vitae fermentum ut, dictum in justo. In porttitor bibendum dolor id consequat. Sed nec scelerisque arcu, at efficitur felis. Praesent pretium leo eget est lobortis aliquam.
+
+        <br>
+        <br>
+        <span class="font-semibold">e. Modelado. <br></span>
+        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nunc vehicula vestibulum lectus rutrum condimentum. Sed sodales lectus quis sodales volutpat. Donec et augue ut erat rutrum venenatis. Vestibulum varius, augue nec dapibus mattis, justo est aliquam velit, nec molestie neque risus sit amet nunc. Sed volutpat pulvinar arcu, non scelerisque purus sodales tincidunt. Nullam non lacinia turpis, in lobortis diam. Donec sollicitudin, orci in ullamcorper convallis, nisi neque volutpat erat, eu sollicitudin magna arcu vel risus. Vivamus volutpat maximus sem.
+
+        Aliquam gravida ipsum at malesuada dapibus. Nulla facilisi. Phasellus et elit interdum dolor condimentum gravida id sed dolor. Duis enim ex, sagittis quis felis quis, aliquam faucibus quam. In lacinia mattis lorem, sit amet mattis libero lacinia nec. Vestibulum eget tempus turpis. Cras dolor ante, iaculis vitae fermentum ut, dictum in justo. In porttitor bibendum dolor id consequat. Sed nec scelerisque arcu, at efficitur felis. Praesent pretium leo eget est lobortis aliquam.
+
+      </div>
+
+
+
+
+
+
+      <h3 class="font-bold text-xl mt-5">5. Conclusiones.</h3>
+      <div class="p-5">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam consectetur nulla auctor orci vulputate, eget consectetur sapien cursus. Vivamus vel feugiat turpis. Suspendisse venenatis risus metus, vitae bibendum ligula condimentum at. Aenean tristique massa odio, id vulputate justo commodo a. Nam quam orci, tempus in efficitur at, auctor ut nunc. Pellentesque id tellus vel nisl pellentesque maximus ut vitae urna. Nulla et molestie urna. Aenean varius diam et facilisis rhoncus. Aliquam erat volutpat. Pellentesque dolor lectus, vulputate id pharetra ut, scelerisque nec odio. Duis ultricies dignissim rhoncus. Pellentesque vel sem commodo, aliquam justo ut, posuere tellus. Cras venenatis consectetur consectetur. Integer quis sagittis leo. Etiam efficitur eget lacus at bibendum. Maecenas egestas iaculis est et varius.
+<br>
+<br>
+        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nunc vehicula vestibulum lectus rutrum condimentum. Sed sodales lectus quis sodales volutpat. Donec et augue ut erat rutrum venenatis. Vestibulum varius, augue nec dapibus mattis, justo est aliquam velit, nec molestie neque risus sit amet nunc. Sed volutpat pulvinar arcu, non scelerisque purus sodales tincidunt. Nullam non lacinia turpis, in lobortis diam. Donec sollicitudin, orci in ullamcorper convallis, nisi neque volutpat erat, eu sollicitudin magna arcu vel risus. Vivamus volutpat maximus sem.
+
+        Aliquam gravida ipsum at malesuada dapibus. Nulla facilisi. Phasellus et elit interdum dolor condimentum gravida id sed dolor. Duis enim ex, sagittis quis felis quis, aliquam faucibus quam. In lacinia mattis lorem, sit amet mattis libero lacinia nec. Vestibulum eget tempus turpis. Cras dolor ante, iaculis vitae fermentum ut, dictum in justo. In porttitor bibendum dolor id consequat. Sed nec scelerisque arcu, at efficitur felis. Praesent pretium leo eget est lobortis aliquam.
+
+      </div>
+
+
+      <h3 class="font-bold text-xl mt-5">6. Recomendaciones.</h3>
+      <div class="p-5">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam consectetur nulla auctor orci vulputate, eget consectetur sapien cursus. Vivamus vel feugiat turpis. Suspendisse venenatis risus metus, vitae bibendum ligula condimentum at. Aenean tristique massa odio, id vulputate justo commodo a. Nam quam orci, tempus in efficitur at, auctor ut nunc. Pellentesque id tellus vel nisl pellentesque maximus ut vitae urna. Nulla et molestie urna. Aenean varius diam et facilisis rhoncus. Aliquam erat volutpat. Pellentesque dolor lectus, vulputate id pharetra ut, scelerisque nec odio. Duis ultricies dignissim rhoncus. Pellentesque vel sem commodo, aliquam justo ut, posuere tellus. Cras venenatis consectetur consectetur. Integer quis sagittis leo. Etiam efficitur eget lacus at bibendum. Maecenas egestas iaculis est et varius.
+<br>
+<br>
+
+        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nunc vehicula vestibulum lectus rutrum condimentum. Sed sodales lectus quis sodales volutpat. Donec et augue ut erat rutrum venenatis. Vestibulum varius, augue nec dapibus mattis, justo est aliquam velit, nec molestie neque risus sit amet nunc. Sed volutpat pulvinar arcu, non scelerisque purus sodales tincidunt. Nullam non lacinia turpis, in lobortis diam. Donec sollicitudin, orci in ullamcorper convallis, nisi neque volutpat erat, eu sollicitudin magna arcu vel risus. Vivamus volutpat maximus sem.
+
+        Aliquam gravida ipsum at malesuada dapibus. Nulla facilisi. Phasellus et elit interdum dolor condimentum gravida id sed dolor. Duis enim ex, sagittis quis felis quis, aliquam faucibus quam. In lacinia mattis lorem, sit amet mattis libero lacinia nec. Vestibulum eget tempus turpis. Cras dolor ante, iaculis vitae fermentum ut, dictum in justo. In porttitor bibendum dolor id consequat. Sed nec scelerisque arcu, at efficitur felis. Praesent pretium leo eget est lobortis aliquam.
+
+      </div>
+
+
+
+    </div>
+  </div>
+
+<!-- pie de página -->
+
+  <div class="w-100 bg-black text-white font-mono text-xl flex text-center justify-center p-10">
+    COCHABAMBA - UNIFRANZ - 2021
+  </div>
+
+  <script src="/main.js" charset="utf-8" type="text/babel"></script>
+  </body>
+</html>
